@@ -1,29 +1,37 @@
-:root {
-    --header-font: 'Jost', sans-serif;
-    --header-log-backgraung-color: #F6B84D;
-}
 .header{
     padding: 25px 0 25px 0;
     display: flex;    
     justify-content: space-between;
     align-items: center;
 }
-.log {
+.logo_wraper {
     width: 120px;
-    background-image: url(/src/icons/logo.png);
-}
-.text__log {
-    background-color: var(--header-log-backgraung-color);
-    font-family: var(--header-font);
-    font-size: 13px;
-}
-h1{
-    font-family: var(--header-font);
-    font-weight: 1000;
-    font-size: 18px;
 }
 .header__text {
+    padding: 10px 160px 0 0;
     width: 328px;
     font-weight: 500;
     font-size: 16px;
+}
+.social_networks {
+    display: flex;
+    padding-right: 100px;
+    gap: 17px;
+}
+.messengers {
+    display: flex;
+    gap: 8px;
+    color: var(--header-messengers-text);
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    width: 165px;
+}
+.link {
+    color: var(--header-nunbers);
+    text-decoration: underline;
+    font-weight: 300;
 }
