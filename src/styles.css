@@ -7,13 +7,33 @@
 :root {
     --header-font-jost: 'Jost', sans-serif;
     --header-font-Montserrat: 'Montserrat', sans-serif;
-    --header-log-backgraung-color: #F6B84D;
+    --header-contact: #F6B84D;
     --header-messengers-text: #C4C4C4;
     --header-numvers: #000000;
+    --header-email: #959595;
+    --home-video-background: #FFFFFF;
+    --home-video-shadow: rgba(0, 0, 0, 0.07);
 }
 .container {
     max-width: 1260px;
     margin: 0 auto;
+}
+h1 {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    color: var(--header-numvers);
+    font-family: var(--header-font-jost);
+}
+h3 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--header-numvers);
+    font-family: var(--header-font-jost);
 }
 h5 {
     font-weight: 600;
