@@ -32,9 +32,13 @@
 }
 
 .form {
+    padding: 0 40px 0 50px;
     display: flex;
     align-items: center;
     gap: 38px;
+    background: var(--home-video-background);
+    box-shadow: 0px 0px 30px var(--home-form-shadow);
+    border-radius: 2px;
 }
 .text-field {
     border: none;

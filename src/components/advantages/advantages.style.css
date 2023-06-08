@@ -1,0 +1,24 @@
+.group-advantages {
+    display: flex;
+    justify-content: space-between;
+    padding: 57px 40px 57px 90px;
+}
+.advantages {
+    display: flex;
+    gap: 20px;
+}
+.link-advanteges {
+    background-image: url(./icons/arrow_grey.svg);
+    width: 38px;
+    height: 38px;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.text-advanteges {
+    font-weight: 400;
+}
+
+.advantages-line {
+    border: 2px solid var(--advantages-line);
+}
