@@ -1,6 +1,6 @@
 import React from "react";
 
-const Social_networks = function() {
+const SocialNetworks = function() {
     return (
         <div className="social_networks">
             <a href="#" className="vk"></a>
@@ -9,4 +9,4 @@ const Social_networks = function() {
     )
 }
 
-export default Social_networks;
+export default SocialNetworks;

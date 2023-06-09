@@ -1,6 +1,6 @@
 import React from "react";
 
-const Group_advantages = (procs) => {
+const GroupAdvantages = (procs) => {
     return (
         <div className="advantages">
             <a href="#" className="link-advanteges"></a>
@@ -12,4 +12,4 @@ const Group_advantages = (procs) => {
     )
 }
 
-export default Group_advantages;
+export default GroupAdvantages;

@@ -14,7 +14,9 @@
     --home-video-background: #FFFFFF;
     --home-video-shadow: rgba(0, 0, 0, 0.07);
     --home-form-shadow: rgba(0, 0, 0, 0.21);
-    --advantages-line: #F6B84D;
+    --calculator-check-mark: #C4C4C4;
+    --calculator-background-form: #FAFAFA;
+    --calculator-shadow-form: rgba(166, 166, 166, 0.17);
 }
 .container {
     max-width: 1260px;
@@ -23,6 +25,14 @@
 h1 {
     font-weight: 800;
     font-size: 46px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    color: var(--header-numvers);
+    font-family: var(--header-font-jost);
+}
+h2 {
+    font-weight: 600;
+    font-size: 36px;
     line-height: 100%;
     letter-spacing: 0.01em;
     color: var(--header-numvers);
