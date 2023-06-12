@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
+import DropDownList from "./components/drop.down.list";
+import AdditionalColors from "./components/additional.colors";
+import Check from "./components/input.check";
+import TextFiled from "./components/text.field";
+import Button from "./components/button";
+import Modal from "./components/modal";
 import "./calculate.styles.css";
 
 const Calculator = () => {
+    const [modalActive, setModalActive] = useState(true)
+    const [lists, setList] = useState([
+        {title: 'Выберите окружение', body: ['Вагонка', 'Кирпич']}, 
+        {title: 'Выберите окружение', body: ['Лестница закрытого типа с забежными ступенями', 'Лестница открытого типа с забежными ступенями']}, 
+    ])
+    const [checks, setCheck] = useState([
+        {title: 'Перила:', body: ['Да', 'Нет'], name: 'railing'}, 
+        {title: 'Ступени:', body: ['Да', 'Нет'], name: 'stairs'}, 
+    ])
+    const [fields, setField] = useState([
+        {title: 'Высота (от пола до пола):', placeholder: '200 мм'},
+        {title: 'Ширина:', placeholder: '1 200 мм'},
+    ])
     return (
         <div className="calculator">
             <div className="container">
@@ -11,68 +30,23 @@ const Calculator = () => {
                 </h2>
                 <div className="groups-calculator">
                     <img src="/assets/stairs.png" alt="Сходи" />
-                    <div ><div className="n"><hr className="line-calculator" /></div>
-                        <div className="calculator-price">  
-                            <div className="field1">
-                                <label><h6 className="text-field1">Выберите окружение</h6></label>
-                                <select name="user_profile_color_1">
-                                    <option value="1">Вагонка</option>
-                                    <option value="2">Кирпич</option>
-                                </select>
+                    <div ><div className="calculator__line"><hr className="line-calculator" /></div>
+                        <form >
+                            <div className="calculator-price"> 
+                                {lists.map( list =>
+                                    <DropDownList list = {list} />
+                                )}
+                                <AdditionalColors />
+                                {checks.map( check => 
+                                    <Check check = {check} />
+                                )}
+                                {fields.map( field => 
+                                    <TextFiled field = {field} />
+                                )}
+                                <Button setModalActive={setModalActive}/>
+                                <Modal  active={modalActive} setActive={setModalActive} />
                             </div>
-                            <div className="field1">
-                                <label><h6 className="text-field1">Выберите окружение</h6></label>
-                                <select name="user_profile_color_1">
-                                    <option value="1">
-                                        Лестница закрытого типа с забежными ступенями
-                                        </option>
-                                    <option value="2">
-                                        Лестница закрытого типа с забежными ступенями
-                                    </option>
-                                </select>
-                            </div>
-                            <div className="gender">
-                                <label className="radio">
-                                    <input type="radio" name="gender" value="male" />
-                                    <i></i>  Есть большой выбор различных цветов.
-                                    Просто сообщите менеджеру, какой цвет вы хотите видеть
-                                </label>
-                            </div>
-                            <div className="check">
-                                <label>Перила:</label>
-                                <label className="radio">
-                                    <input type="radio" name="gender" value="male" />
-                                    <i></i>  Да
-                                </label>
-                                <label className="radio">
-                                    <input type="radio" name="gender" value="male" />
-                                    <i></i> Нет
-                                </label>
-                            </div>
-                            <div className="check check2">
-                                <label>Ступени:</label>
-                                <label className="radio">
-                                    <input type="radio" name="gender" value="male" />
-                                    <i></i>  Да
-                                </label>
-                                <label className="radio">
-                                    <input type="radio" name="gender" value="male" />
-                                    <i></i> Нет
-                                </label>
-                            </div>
-                            <div className="text-field">
-                                <laber><h6 className="field-title">Высота (от пола до пола)</h6></laber>
-                                <input type="text" name="heigh" value="200 мм" required />
-                            </div>
-                            <div className="text-field text-field2">
-                                <laber><h6 className="field-title">Ширина</h6></laber>
-                                <input type="text" name="heigh" value="1 200 мм" required />
-                            </div>
-                            <div className="buttton-calculate">
-                                <input type="text" name="number" placeholder="номер телефона" className="fone-calculate" required />
-                                <button className="will-order" ><h6 className="text-will-order">ЗАКАЗАТЬ</h6><a href="#" className="icon-will-order" /></button>
-                            </div>
-                        </div>
+                        </form> 
                     </div>
                 </div>
             </div>
