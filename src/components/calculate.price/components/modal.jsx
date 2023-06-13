@@ -5,7 +5,7 @@ import ModalExit from '../icons/modal_exit.svg';
 const Modal = ({active, setActive}) => {
     return (
         <div className={active ? "modal active" : "modal"} onClick={() => setActive(false)}>
-            <div className="madal__content" onClick={e => e.stopPropagation}>
+            <div className="madal__content" onClick={e => e.stopPropagation()}>
                 <div className="modal__block_line">
                     <hr className="modal__line" />
                 </div>        
