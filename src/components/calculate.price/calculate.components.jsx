@@ -8,7 +8,10 @@ import Modal from "./components/modal";
 import "./calculate.styles.css";
 
 const Calculator = () => {
-    const [modalActive, setModalActive] = useState(true)
+    const [modalActive, setModalActive] = useState(false)
+    const [checked1, setChecked1] = useState(true)
+    const [checked2, setChecked2] = useState(true)
+    console.log('modalActive')
     const [lists, setList] = useState([
         {title: 'Выберите окружение', body: ['Вагонка', 'Кирпич']}, 
         {title: 'Выберите окружение', body: ['Лестница закрытого типа с забежными ступенями', 'Лестница открытого типа с забежными ступенями']}, 
@@ -38,7 +41,7 @@ const Calculator = () => {
                                 )}
                                 <AdditionalColors />
                                 {checks.map( check => 
-                                    <Check check = {check} />
+                                    <Check check = {check} checked1={checked1} checked2={checked2} setChecked1={setChecked1} setChecked2={setChecked2} />
                                 )}
                                 {fields.map( field => 
                                     <TextFiled field = {field} />
