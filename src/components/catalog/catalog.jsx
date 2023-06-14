@@ -5,7 +5,6 @@ const Catalog = function() {
         <div className="catalog">
             <div className="stairs"></div>
             <div className="perila"></div>
-
         </div>
     )
 }

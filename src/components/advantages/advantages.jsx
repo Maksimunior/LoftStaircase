@@ -12,8 +12,8 @@ const Advantages = function() {
     return (
         <div className="container">
             <div className="group-advantages">
-                {infos.map(info => 
-                    <GroupAdvantages info={info}/>
+                {infos.map((info, index) => 
+                    <GroupAdvantages key={index} info={info}/>
                 )}  
             </div>
             <hr className="advantages-line"/>

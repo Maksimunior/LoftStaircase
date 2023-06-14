@@ -108,9 +108,13 @@
     opacity: 0.7;
     padding-bottom: 10px;
 }
+.button-component {
+    display: flex;
+}
 .buttton-calculate {
     display: flex;
 }
+
 .fone-calculate {
     width: 239px;
     height: 54px;
@@ -153,6 +157,7 @@
     flex-direction: column;
     width: 835px;
     height: 200px;
+    gap: 20px;
     background-color: var(--calculator-background-form);
     box-shadow: 0px 0px 30px var(--calculator-shadow-form);
 }
@@ -163,9 +168,6 @@
 .modal__line {
     width: 620px;
     border: 2px solid #F6B84D;
-}
-.madal__title {
-    padding: 35px 0 20px 0 ;
 }
 .modal__botton {
     width: 18px;
@@ -178,4 +180,7 @@
     padding: 14px 25px 0 0;
     display: flex;
     justify-content: end;
+}
+.modal__text {
+    font-weight: 300;
 }

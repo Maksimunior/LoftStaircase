@@ -1,6 +1,6 @@
 import React from "react";
 
-const AdditionalColors = function() {
+export const AdditionalColors = function() {
     return (
         <div className="colors"> 
             <h6 className="text-field1">Есть большой выбор различных цветов.<br />
@@ -8,5 +8,3 @@ const AdditionalColors = function() {
         </div>
     )
 }
-
-export default AdditionalColors;
