@@ -6,7 +6,7 @@ export const FiledHeight = ({ onChange, name, value }) => {
     };
     return (
         <div className="text-field">
-            <laber><h6 className="field-title">Ширина:</h6></laber>
+            <label><h6 className="field-title">Ширина:</h6></label>
             <div>
                 <input 
                   type="text" 

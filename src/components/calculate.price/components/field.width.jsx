@@ -6,7 +6,7 @@ export const FiledWidth = ({ onChange, name, value }) => {
     };
     return (
         <div className="text-field">
-            <laber><h6 className="field-title">Высота (от пола до пола):</h6></laber>
+            <label><h6 className="field-title">Высота (от пола до пола):</h6></label>
             <div>
                 <input 
                   type="text"

@@ -14,9 +14,9 @@ export const Modal = ({active, setActive, ...props}) => {
                 <div className="modal__block_line">
                     <hr className="modal__line" />
                 </div>        
-                <biv className="modal__block_button">
+                <div className="modal__block_button">
                     <button className="modal__botton" onClick={noReset}><img src={ModalExit} alt="icon" /></button>
-                </biv>
+                </div>
               </div>
                 <h2>Ваш расчет готов!</h2>
                 <h2 className="modal__text">Ваш счет: {props.value} рублей</h2>

@@ -47,7 +47,6 @@ const Calculator = () => {
       if (state.stairs === 'Да')
         sum += 100
       setPrice(sum);
-      console.log(price);
       setModalActive(true);
     }
   };
@@ -55,10 +54,10 @@ const Calculator = () => {
   return (
     <div className="calculator">
       <div className="container">
-        <h2 className="title-calculator">
-          Рассчитать стоимость лестницы
+        <div className="calculator__title">
+          <h2 className="title-calculator">Рассчитать стоимость лестницы</h2>
           <h2 className="title-backgraund">за 1 минуту</h2>
-        </h2>
+        </div>
         <div className="groups-calculator">
           <img src="/assets/stairs.png" alt="Сходи" />
           <div>
