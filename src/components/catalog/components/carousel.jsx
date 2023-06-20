@@ -1,7 +1,9 @@
 import React from "react"
 
 export const Carousel = (props) => {
-    console.log(props)
+    const Click = (e) => {
+        e.preventDefault()
+    }
     return (
         <div 
           className="card"
@@ -19,7 +21,7 @@ export const Carousel = (props) => {
                     <h6 className="text-opasity">под ключ с покраской в любой цвет</h6>
                 </div>
                 <div className="group-button">
-                    <button className="will-order" ><h6 className="text-will-order">ЗАКАЗАТЬ</h6><a href="#" className="icon-will-order"/></button>
+                    <button className="will-order" onClick={Click} ><h6 className="text-will-order">ЗАКАЗАТЬ</h6><a href="#" className="icon-will-order"/></button>
                 </div>
             </div>
         </div>

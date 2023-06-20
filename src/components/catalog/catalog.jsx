@@ -1,8 +1,9 @@
 import React, { useMemo, useRef, useState } from "react";
 import { Carousel } from "./components/carousel";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
-import { Categories } from "./components/categories";
+import { Perila } from "./components/perila";
 import "./catalog.styles.css"
+
 
 const card = [
     {title: 'Два марша без площадки на монокосоуре', body: 'от 100 000 Р', values: 'монокосоур'}, 
@@ -107,14 +108,6 @@ const Catalog = () => {
                 <div className="stairs">
                     <h1>Каталог лестниц</h1>
                     <div>
-                        {/* <Categories 
-                          name={catedories}
-                        //   ref={bodyCategories}
-                        //   value={catedories} 
-                          onChange={event => setCatigories(event.target.value)}  
-                          onClick={sortedSlider}
-                          cards={sortedSlider}
-                        /><hr className="categories-line"/> */}
                         <div className="categories">
                             <button 
                               className={active1 ? "button-categories button-categories-background" : "button-categories"} 
@@ -162,8 +155,15 @@ const Catalog = () => {
                             </div> 
                         </div>
                     </div>
+                </div>            
+                <h1>Перила-ограждения на выбор</h1>
+                <div className="perila">
+                    <Perila />
+                    <Perila />
+                    <Perila />
+                    <Perila />
+                    <Perila />
                 </div>
-                <div className="perila"></div>
             </div>
         </div>
     )

@@ -59,7 +59,7 @@ const Calculator = () => {
           <h2 className="title-backgraund">за 1 минуту</h2>
         </div>
         <div className="groups-calculator">
-          <img src="/assets/stairs.png" alt="Сходи" />
+          <img src="/assets/catalog-stairs.png" alt="Сходи" />
           <div>
             <div className="calculator__line">
               <hr className="line-calculator" />
