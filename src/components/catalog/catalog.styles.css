@@ -83,7 +83,7 @@
     background: var(--header-contact);
 }
 .block-right {
-    transform: translateX(195vh);
+    transform: translateX(180vh);
 }
 .block-left {
     transform: translateX(-60px);

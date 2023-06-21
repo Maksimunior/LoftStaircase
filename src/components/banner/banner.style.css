@@ -1,0 +1,59 @@
+.banner {
+    display: flex;
+    justify-content: space-between;
+    background: var(--catalog-line);
+    padding-left: 55px;
+}
+.banner__block_form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 66px 0 66px 0;
+    text-align: left;
+}
+.banner__text {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.banner__block_text {
+    display: flex;
+}
+.banner__white_background {
+    background: var(--home-video-background);
+    padding: 0 5px 2px 5px;
+    margin: 0 10px 0 10px;
+}
+.banner__body_text {
+    font-weight: 400;
+}
+.banner__phone {
+    padding: 19px 100px 18px 25px;
+    border: 1px solid var(--calculator-check-mark);
+    border-radius: 2px;
+    background: none;
+}
+.banner__form {
+    display: flex;
+}
+.banner__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 80px 8px 80px;
+    gap: 22px;
+    background: var(--home-video-background);
+    border: none;
+    border-radius: 2px;
+}
+.banner__button_icon {
+    background: var(--header-contact);
+    background-image: url(./icons/Arrow_white.svg);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    block-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}

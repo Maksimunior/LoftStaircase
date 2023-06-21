@@ -5,6 +5,7 @@ import Advantages from "../components/advantages/advantages";
 import Calculator from "../components/calculate.price/calculate.components";
 import Catalog from "../components/catalog/catalog";
 import { Sheathing } from "../components/sheathing/sheathing";
+import { Banner } from "../components/banner/banner";
 import '../styles.css';
 
 const Main_page = function () {
@@ -16,6 +17,7 @@ const Main_page = function () {
             <Calculator />
             <Catalog />
             <Sheathing />
+            <Banner />
        </>
     )
 }
