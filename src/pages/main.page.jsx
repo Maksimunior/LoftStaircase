@@ -7,6 +7,7 @@ import Catalog from "../components/catalog/catalog";
 import { Sheathing } from "../components/sheathing/sheathing";
 import { Banner } from "../components/banner/banner";
 import { Projects } from "../components/projects/projects";
+import { Director } from "../components/director/director";
 import '../styles.css';
 
 const MainPage = function () {
@@ -20,6 +21,7 @@ const MainPage = function () {
             <Sheathing />
             <Banner />
             <Projects />
+            <Director />
        </>
     )
 }

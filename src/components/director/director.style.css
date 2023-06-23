@@ -1,0 +1,33 @@
+.director {
+    position: relative;
+    display: flex;
+}
+.director__block_text {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    padding: 37px 106px 34px 533px;
+    max-width: 620px;
+    text-align-last: left;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--catalog-line);
+}
+.director__group_title {
+    display: flex;
+    white-space: pre;
+}
+.director__title {
+    background: var(--header-contact);
+    padding: 0 5px 0 5px;
+}
+.director__paragraph {
+    text-align: left;
+    font-weight: 400;
+}
+.director_name {
+    display: flex;
+    justify-content: end;
+    font-weight: 400;
+}
