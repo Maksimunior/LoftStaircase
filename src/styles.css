@@ -52,7 +52,6 @@ h4 {
     font-weight: 600;
     font-size: 18px;
     line-height: 120%;
-    text-align: center;
     letter-spacing: 0.08em;
     text-transform: uppercase;    
     color: var(--header-numvers);

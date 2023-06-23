@@ -1,9 +1,8 @@
-import React, { useMemo, useRef, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { Carousel } from "./components/carousel";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
 import { Perila } from "./components/perila";
 import "./catalog.styles.css"
-
 
 const card = [
     {title: 'Два марша без площадки на монокосоуре', body: 'от 100 000 Р', values: 'monokosour'}, 
@@ -71,31 +70,24 @@ const Catalog = () => {
                     <h1>Каталог лестниц</h1>
                     <div>
                         <div className="categories">
-                            <button 
+                            <button
                               className={activeButton === 'all' ? "button-categories button-categories-background" : "button-categories"} 
-                              value="all" 
                               onClick={() => {handleCategoryClick('all')}}
-                              onClickCategory={handleLeftArrowClick}
                             ><h4>все</h4></button>
                             <button 
                               className={activeButton === 'monokosour' ? "button-categories button-categories-background" : "button-categories"} 
-                              value="monokosour" 
                               onClick={() => handleCategoryClick('monokosour')}
-                              onClickCategory={handleRightArrowClick}
                             ><h4>монокосоур</h4></button>
                             <button 
                               className={activeButton === 'closed' ? "button-categories button-categories-background" : "button-categories"} 
-                              value="closed" 
                               onClick={() => handleCategoryClick('closed')}
                             ><h4>закрытые</h4></button>
                             <button 
                               className={activeButton === 'open' ? "button-categories button-categories-background" : "button-categories"}  
-                              value="open" 
                               onClick={() => handleCategoryClick('open')}
                             ><h4>открытые</h4></button>
                             <button 
                               className={activeButton === 'screw' ? "button-categories button-categories-background" : "button-categories"} 
-                              value="screw" 
                               onClick={() => handleCategoryClick('screw')}
                             ><h4>винтовые</h4></button>
                         </div><hr className="categories-line"/>

@@ -6,9 +6,10 @@ import Calculator from "../components/calculate.price/calculate.components";
 import Catalog from "../components/catalog/catalog";
 import { Sheathing } from "../components/sheathing/sheathing";
 import { Banner } from "../components/banner/banner";
+import { Projects } from "../components/projects/projects";
 import '../styles.css';
 
-const Main_page = function () {
+const MainPage = function () {
     return (
         <>
             <Header />
@@ -18,8 +19,9 @@ const Main_page = function () {
             <Catalog />
             <Sheathing />
             <Banner />
+            <Projects />
        </>
     )
 }
 
-export default Main_page;
+export default MainPage;

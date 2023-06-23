@@ -1,0 +1,52 @@
+.projects {
+    padding: 80px 0 80px 0;
+}
+.projects__block_title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 55px;
+}
+.project__title {
+    background: var(--header-contact);
+    padding: 0 5px 2px 5px;
+    margin-left: 10px;
+}
+.projects__group_cards {
+    display: flex;
+    overflow: hidden;
+}
+.carusel {
+    display: flex;
+    transition-property: transform; 
+    transition-duration: 440ms;
+    transition-timing-function: ease-in-out;
+}
+.carusel__block_text {
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 235px;
+    gap: 26px;
+}
+.carusel_paragraph {
+    font-weight: 600;
+}
+.carusel__group_price {
+    display: flex;
+    gap: 15px;
+}
+.carusel_prise {
+    background: var(--header-contact);
+    padding: 0 5px 0 5px;
+}
+.carusel__text_flex {
+    display: flex;
+}
+ul {
+    padding-left: 15px;
+}
+.carusel_h5-weight {
+    font-weight: 400;
+    white-space: pre;
+}

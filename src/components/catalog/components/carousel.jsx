@@ -7,7 +7,6 @@ export const Carousel = (props) => {
     return (
         <div 
           className="card"
-          values={props.card.values}
           style={{transform: `translateX(${props.values}px)`}}
         >
             <img className="card-icon" src="/assets/card_categories.png" alt="Картка сходів" />

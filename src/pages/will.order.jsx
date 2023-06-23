@@ -1,9 +1,9 @@
 import React from "react";
 
-const Will_order = function () {
+const WillOrder = function () {
     return (
         <div>Ghbdsn</div>
     )
 }
 
-export default Will_order;
+export default WillOrder;

@@ -1,17 +1,17 @@
 import {Routes, Route, Link} from "react-router-dom"
 
 import React from "react";
-import Main_page from "./pages/main.page";
+import MainPage from "./pages/main.page";
 import Guige from "./pages/guige";
-import Will_order from "./pages/will.order";
+import WillOrder from "./pages/will.order";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Main_page />} />
+        <Route path="/" element={<MainPage />} />
         <Route path="/guige" element={<Guige />} />
-        <Route path="/will_order" element={<Will_order />} /> 
+        <Route path="/will_order" element={<WillOrder />} /> 
       </Routes>
     </div>
   );
