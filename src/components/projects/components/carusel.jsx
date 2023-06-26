@@ -17,7 +17,7 @@ export const Carusel = (props) => {
                 <div>
                     <p className="carusel_paragraph">цена под ключ</p>
                     <div className="carusel__group_price">
-                        <h4 className="carusel_prise">{props.info.price[0]}</h4>
+                        <h4 className="text-fone">{props.info.price[0]}</h4>
                         <p className="carusel_paragraph"><s>{props.info.price[1]}</s></p>
                     </div>
                 </div>

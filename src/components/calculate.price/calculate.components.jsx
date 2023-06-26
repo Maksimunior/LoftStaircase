@@ -55,8 +55,8 @@ const Calculator = () => {
     <div className="calculator">
       <div className="container">
         <div className="calculator__title">
-          <h2 className="title-calculator">Рассчитать стоимость лестницы</h2>
-          <h2 className="title-backgraund">за 1 минуту</h2>
+          <h2>Рассчитать стоимость лестницы </h2>
+          <h2 className="text-fone">за 1 минуту</h2>
         </div>
         <div className="groups-calculator">
           <img src="/assets/catalog-stairs.png" alt="Сходи" />

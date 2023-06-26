@@ -1,0 +1,33 @@
+.banner-stairs {
+    padding-top: 247px;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 32px;
+}
+.banner-stairs__form {
+    width: 100%;
+    position: absolute;
+    padding: 67px 0 60px 54px;
+    background: var(--catalog-line);
+}
+.banner-stairs__group_title {
+    display: flex;
+}
+.banner-stairs__group_paragraph {
+    margin: 14px 0 31px 0;
+}
+.banner-stairs__icon {
+    position: absolute;
+    right: 0;
+    
+    z-index: 1;
+}
+.button-stairs__paragraph1 {
+    font-weight: 500;
+}
+.button-stairs__paragraph {
+    font-weight: 500;
+    display: inline-flex;
+}

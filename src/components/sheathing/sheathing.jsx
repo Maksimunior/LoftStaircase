@@ -15,9 +15,9 @@ export const Sheathing = () => {
             <img src="./assets/sheathing-stairs.png" alt="Перила" className="sheathing__icon_perila"/>
             <div className="container">
                 <giv className="sheathing__group_title">
-                    <h2>Как мы</h2>
-                    <h2 className="title-background">производим</h2>
-                    <h2>лестницу</h2>
+                    <h2>Как мы </h2>
+                    <h2 className="text-fone">производим</h2>
+                    <h2> лестницу</h2>
                 </giv>
                 <div className="sheathing__stages">
                     {stagesArr.map((stagesArr, index) => 

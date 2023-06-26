@@ -9,6 +9,7 @@ import { Banner } from "../components/banner/banner";
 import { Projects } from "../components/projects/projects";
 import { Director } from "../components/director/director";
 import { Contacts } from "../components/contacts/contacts";
+import { BannerStairs } from "../components/banner.stairs/banner.stairs";
 import '../styles.css';
 
 const MainPage = function () {
@@ -24,6 +25,7 @@ const MainPage = function () {
             <Projects />
             <Director />
             <Contacts />
+            <BannerStairs />
        </>
     )
 }

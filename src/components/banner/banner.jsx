@@ -1,6 +1,6 @@
 import React from "react";
 import { TextBanner } from "./components/text.banner";
-import { FormBanner } from "./components/form.banner";
+import { FormBanner } from "../form.banner";
 import "./banner.style.css"
 
 export const Banner = () => {
@@ -11,7 +11,7 @@ export const Banner = () => {
                     <TextBanner />
                     <FormBanner />
                 </div>
-                <img src="./assets/banner.png" alt="Банер" className="banner__icon" />
+                <img src="./assets/banner.png" alt="Банер"/>
             </div>
         </div>
     )

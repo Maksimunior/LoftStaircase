@@ -7,23 +7,11 @@
     display: flex;
     justify-content: center;
     height: 36px;
+    white-space: pre;
 }
-.title-calculator {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.title-backgraund {
-    margin-left: 10px;
-    padding: 0 5px 2px 5px;
-    background: var(--header-contact);
-    border-radius: 2px;
-}
-
 .groups-calculator {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .calculator-price {

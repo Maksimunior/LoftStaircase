@@ -19,10 +19,6 @@
     display: flex;
     white-space: pre;
 }
-.director__title {
-    background: var(--header-contact);
-    padding: 0 5px 0 5px;
-}
 .director__paragraph {
     text-align: left;
     font-weight: 400;

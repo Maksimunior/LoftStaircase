@@ -5,11 +5,7 @@
     display: flex;
     justify-content: center;
     padding-bottom: 55px;
-}
-.project__title {
-    background: var(--header-contact);
-    padding: 0 5px 2px 5px;
-    margin-left: 10px;
+    white-space: pre;
 }
 .projects__group_cards {
     display: flex;
@@ -35,10 +31,6 @@
 .carusel__group_price {
     display: flex;
     gap: 15px;
-}
-.carusel_prise {
-    background: var(--header-contact);
-    padding: 0 5px 0 5px;
 }
 .carusel__text_flex {
     display: flex;

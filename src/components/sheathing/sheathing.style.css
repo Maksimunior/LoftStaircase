@@ -5,12 +5,7 @@
 .sheathing__group_title {
     display: flex;
     justify-content: center;
-}
-.title-background {
-    margin: 0 10px 0 10px;
-    padding: 0 5px 2px 5px;
-    background: var(--header-contact);
-    border-radius: 2px;
+    white-space: pre;
 }
 .sheathing__icon_perila {
     position: absolute;
