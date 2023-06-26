@@ -1,4 +1,7 @@
-.header{
+.header {
+    background: var(--calculator-background-form);
+}
+.header_block{
     padding: 25px 0 25px 0;
     display: flex;    
     justify-content: space-between;

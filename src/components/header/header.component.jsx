@@ -7,16 +7,18 @@ import "./header.styles.css"
 
 const Header = function() {
     return (
-        <div className="container">
-            <div className="header">
-                <Logo/>
-                <h5 className="header__text">
-                    изготовление лестниц на металлокаркасев Санкт-Петербурге
-                </h5>
-                <SocialNetworks/>
-                <Messengers/>
-                <Contacts/>
-            </div>  
+        <div className="header">
+            <div className="container">
+                <div className="header_block">
+                    <Logo/>
+                    <h5 className="header__text">
+                        изготовление лестниц на металлокаркасев Санкт-Петербурге
+                    </h5>
+                    <SocialNetworks/>
+                    <Messengers/>
+                    <Contacts/>
+                </div>  
+            </div>
         </div>
     )
 }

@@ -11,6 +11,7 @@ import { Director } from "../components/director/director";
 import { Contacts } from "../components/contacts/contacts";
 import { BannerStairs } from "../components/banner.stairs/banner.stairs";
 import '../styles.css';
+import { Footer } from "../components/footer/footer";
 
 const MainPage = function () {
     return (
@@ -26,6 +27,7 @@ const MainPage = function () {
             <Director />
             <Contacts />
             <BannerStairs />
+            <Footer />
        </>
     )
 }

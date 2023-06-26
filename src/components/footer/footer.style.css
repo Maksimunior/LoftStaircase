@@ -1,0 +1,11 @@
+.footer {
+    background: var(--catalog-line);
+}
+.footer__text {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0 12px 0;
+}
+.footer__text-backgraund {
+    opacity: 0.6;
+}
