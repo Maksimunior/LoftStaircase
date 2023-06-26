@@ -1,6 +1,7 @@
 .banner {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     background: var(--catalog-line);
     padding-left: 55px;
 }

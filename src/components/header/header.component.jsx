@@ -1,10 +1,9 @@
 import React from "react";
-import './header.styles.css'
 import Logo from "./components/header.logo";
-import SocialNetworks from "./components/social.networks";
-import Messengers from "./components/messengers";
+import { SocialNetworks } from "../social.networks";
+import Messengers from "../messengers";
 import Contacts from "./components/conctacts";
-
+import "./header.styles.css"
 
 const Header = function() {
     return (

@@ -8,6 +8,7 @@ import { Sheathing } from "../components/sheathing/sheathing";
 import { Banner } from "../components/banner/banner";
 import { Projects } from "../components/projects/projects";
 import { Director } from "../components/director/director";
+import { Contacts } from "../components/contacts/contacts";
 import '../styles.css';
 
 const MainPage = function () {
@@ -22,6 +23,7 @@ const MainPage = function () {
             <Banner />
             <Projects />
             <Director />
+            <Contacts />
        </>
     )
 }

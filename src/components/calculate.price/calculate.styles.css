@@ -23,6 +23,7 @@
 
 .groups-calculator {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .calculator-price {

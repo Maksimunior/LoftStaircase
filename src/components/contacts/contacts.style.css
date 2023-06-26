@@ -1,0 +1,35 @@
+.contact {
+    background: var(--calculator-background-form);
+    padding: 59px 0 80px 0;
+}
+.contact__group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contact__link {
+    color: var(--header-nunbers);
+    text-decoration: none;
+    font-weight: 300;
+}
+.contact__link:hover {
+    color: var(--header-email);
+}
+.contact__block_text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+.contact__title {
+    max-width: 155px;
+    background: var(--header-contact);
+}
+.contact__paragraph {
+    font-weight: 400;
+    padding: 2px 0 34px 0;
+}
+.contact__networks {
+    display: flex;
+    gap: 27px;
+}

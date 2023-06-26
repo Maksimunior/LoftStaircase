@@ -69,7 +69,6 @@ h6 {
     font-weight: 300;
     font-size: 14px;
     line-height: 120%;
-    text-align: right;
     letter-spacing: 0.03em;
     color: var(--header-numvers);
     font-family: var(--header-font-jost);
@@ -86,4 +85,90 @@ p {
 }
 a {
     text-decoration: none;
+}
+
+.animations-contacts:hover .phone{
+    color: var(--header-contact);
+}
+
+.social_networks {
+    display: flex;
+    padding-right: 100px;
+    align-items: center;
+    gap: 17px;
+}
+.vk{
+    width: 22px;
+    height: 12.83px;
+    background-image: url(./components/icons/vk.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.vk:hover {
+    background-image: url(./components/icons/vk_gray.svg);
+}
+.instagram {
+    width: 20px;
+    height: 20px;
+    background-image: url(./components/icons/instagram.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.instagram:hover {
+    background-image: url(./components/icons/instagram_gray.svg);
+}
+
+.messengers {
+    display: flex;
+    gap: 8px;
+    color: var(--header-messengers-text);
+}
+.animations {
+    display: flex;
+    cursor: pointer;
+    gap: 8px;
+}
+a.whats-app {
+    width: 18px;
+    height: 18px;
+    background-image: url(./components/icons/whatsapp.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.animations:hover a.whats-app {
+    background-image: url(./components/icons/whatsapp_grin.svg);
+}
+.animations:hover .whats-app {
+    color: var(--header-numvers);
+}
+a.viber {
+    width: 18px;
+    height: 18px;
+    background-image: url(./components/icons/viber.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.animations:hover a.viber {
+    background-image: url(./components/icons/viber_violet.svg);
+}
+.animations:hover .viber {
+    color: var(--header-numvers);
+}
+a.telegram {
+    width: 18px;
+    height: 18px;
+    background-image: url(./components/icons/telegram.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.animations:hover a.telegram {
+    background-image: url(./components/icons/telegram_blue.svg);
+}
+.animations:hover .telegram {
+    color: var(--header-numvers);
 }

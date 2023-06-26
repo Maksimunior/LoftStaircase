@@ -1,5 +1,5 @@
 import React from "react";
-import divider from "../icons/divider.svg";
+import divider from "./icons/divider.svg";
 
 const Messengers = function() {
     return (
