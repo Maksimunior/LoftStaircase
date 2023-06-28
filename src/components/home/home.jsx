@@ -1,23 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
+import { InfoText, Order, Introduction, ModalVodeo } from "./components";
 import "./home.styles.css";
-import Menu from "./components/menu";
-import InfoText from "./components/info.text";
-import Order from "./components/form.order";
-import Introduction from "./components/video.introduction";
 
-const Home = function() {
+export const Home = function() {
+    const [modalActive, setModalActive] = useState(false)
+    const Video = (e) => {
+        e.preventDefault();
+        setModalActive(true);
+    }
     return (
         <div className="home">
             <div className="container">
-                <Menu />
                 <InfoText />
                 <div className="group-form">
                     <Order />
-                    <Introduction />
+                    <Introduction onClick={Video}/>
                 </div>
+                <ModalVodeo 
+                  active={modalActive}
+                  setModalActive={setModalActive}
+                />
             </div>
         </div>
     )
 }
-
-export default Home;

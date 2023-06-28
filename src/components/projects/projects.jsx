@@ -57,7 +57,7 @@ export const Projects = () => {
         <div className="projects">
             <div className="container">
                 <div className="projects__block_title">
-                    <h2>Наши </h2>
+                    <h2 id="projects">Наши </h2>
                     <h2 className="text-fone">работы</h2>
                 </div>
                 <div className="categories">

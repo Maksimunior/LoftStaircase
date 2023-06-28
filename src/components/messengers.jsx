@@ -1,9 +1,12 @@
 import React from "react";
 import divider from "./icons/divider.svg";
 
-const Messengers = function() {
+export const Messengers = function() {
+    const Click = (e) => {
+        e.preventDefault()
+    }
     return (
-        <div className="messengers">
+        <div className="messengers" onClick={Click}>
             <div className="animations">
                 <a href="#" className="whats-app"></a>
                 <p className="whats-app">WhatsApp</p>
@@ -21,5 +24,3 @@ const Messengers = function() {
         </div>
     )
 }
-
-export default Messengers;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const InfoText = function() {
+export const InfoText = function() {
     return (
         <div className="home__text">
             <h1 className="title-text">Каркасная лестница на монокосоуре</h1>
@@ -8,4 +8,3 @@ const InfoText = function() {
         </div>
     )
 }
-export default InfoText;

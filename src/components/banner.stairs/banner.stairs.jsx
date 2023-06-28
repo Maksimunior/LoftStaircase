@@ -1,7 +1,5 @@
 import React from "react";
-import { FormBanner } from "../form.banner";
-import { BannerParagraph } from "./components/baner.paragraph";
-import { BannerTitle } from "./components/banner.title";
+import { BannerParagraph, BannerTitle, FormBanner } from "./components";
 import "./banner.stairs.style.css"
 
 export const BannerStairs = () => {

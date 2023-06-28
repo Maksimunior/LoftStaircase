@@ -34,7 +34,7 @@
 }
 .stages__arrow {
     background: var(--header-contact);
-    background-image: url(./iconns/Arrow_white.svg);
+    background-image: url(./icons/Arrow_white.svg);
     width: 38px;
     height: 38px;
     border-radius: 50%;

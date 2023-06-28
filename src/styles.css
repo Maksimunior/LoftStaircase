@@ -69,7 +69,6 @@ h6 {
     font-weight: 300;
     font-size: 14px;
     line-height: 120%;
-    /* text-align: right; */
     letter-spacing: 0.03em;
     color: var(--header-numvers);
     font-family: var(--header-font-jost);
@@ -87,7 +86,6 @@ p {
 a {
     text-decoration: none;
 }
-
 
 .animations-contacts:hover .phone{
     color: var(--header-contact);
@@ -126,6 +124,7 @@ a {
     display: flex;
     gap: 8px;
     color: var(--header-messengers-text);
+    padding-right: 30px;
 }
 .animations {
     display: flex;

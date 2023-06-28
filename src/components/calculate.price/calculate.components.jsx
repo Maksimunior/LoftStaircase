@@ -8,11 +8,11 @@ const initialState = {
   perila: "",
   stairs: "",
   width: "200 мм",
-  height: "1 200 мм",
+  height: "1200 мм",
   phone: "",
 };
 
-const Calculator = () => {
+export const Calculator = () => {
   const [modalActive, setModalActive] = useState(false);
   const [price, setPrice] = useState(0)
   const [state, dispatch] = useReducer(Reducer, initialState);
@@ -26,6 +26,7 @@ const Calculator = () => {
 
   const noReset = (e) => {
     e.preventDefault();
+    console.log(parseInt(state.height))
     if (
       state.perila &&
       state.stairs &&
@@ -39,9 +40,9 @@ const Calculator = () => {
       else
         sum += 150
       if (state.envType === 'Лестница закрытого типа с забежными ступенями')
-        sum += 300
+        sum += (500 * parseInt(state.width)) + (600 * parseInt(state.height))
       else
-        sum += 450
+      sum += (700 * parseInt(state.width)) + (800 * parseInt(state.height))
       if (state.perila === 'Да')
         sum += 100
       if (state.stairs === 'Да')
@@ -55,7 +56,7 @@ const Calculator = () => {
     <div className="calculator">
       <div className="container">
         <div className="calculator__title">
-          <h2>Рассчитать стоимость лестницы </h2>
+          <h2 id="price">Рассчитать стоимость лестницы </h2>
           <h2 className="text-fone">за 1 минуту</h2>
         </div>
         <div className="groups-calculator">
@@ -120,5 +121,3 @@ const Calculator = () => {
     </div>
   );
 };
-
-export default Calculator;

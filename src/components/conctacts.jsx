@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contacts = function() {
+export const Contacts = function() {
     return (
         <div className="contacts">
             <div className="animations-contacts">
@@ -11,4 +11,3 @@ const Contacts = function() {
         </div>
     )
 }
-export default Contacts;

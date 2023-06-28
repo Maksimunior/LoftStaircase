@@ -1,8 +1,5 @@
 import React from "react";
-import Messengers from "../messengers";
-import { SocialNetworks } from "../social.networks";
-import { ContactsIcons } from "./components/contacts.icons";
-import { ContactsPhone } from "./components/contacts.phone";
+import { ContactsIcons, ContactsPhone, SocialNetworks, Messengers } from "./components";
 import "./contacts.style.css"
 
 export const Contacts = () => {

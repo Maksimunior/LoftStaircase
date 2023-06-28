@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ModalExit from '../icons/modal_exit.svg';
 
 

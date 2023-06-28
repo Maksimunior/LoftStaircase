@@ -2,20 +2,20 @@
     background: var(--calculator-background-form);
 }
 .header_block{
-    padding: 25px 0 25px 0;
+    padding: 25px 30px 25px 0;
     display: flex;    
-    justify-content: space-between;
-    align-items: center;
 }
 .logo_wraper {
     max-width: 120px;
+    z-index: 4;
 }
 
 .header__text {
-    padding: 10px 160px 0 0;
+    padding: 10px 0 0 32px;
     width: 328px;
     font-weight: 500;
     font-size: 16px;
+    z-index: 4;
 }
 
 .contacts {
@@ -32,4 +32,32 @@
 }
 .link:hover {
     color: var(--header-email);
+}
+
+.menu {
+    transform: translate(0, 100px);
+    padding: 25px 40px 25px 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 40px;
+    z-index: 4;
+    flex-wrap: wrap;
+}
+
+.fixed {
+    transform: translate(0, -100px);
+}
+
+.header__fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px 130px 15px 0; 
+    display: flex;
+    align-items: center;
+    justify-content: end;   
+    background: var(--calculator-background-form);
+    z-index: 3;
+    width: 100%;
 }

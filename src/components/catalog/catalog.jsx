@@ -1,7 +1,6 @@
 import React, { useMemo, useState } from "react";
-import { Carousel } from "./components/carousel";
+import { Carousel, Perila } from "./components";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
-import { Perila } from "./components/perila";
 import "./catalog.styles.css"
 
 const card = [
@@ -28,7 +27,7 @@ const card = [
     {title: 'Два марша без площадки на открытой лестнице', body: 'от 350 000 Р', values: 'open'},
 ]
 
-const Catalog = () => {
+export const Catalog = () => {
     const [ofsait, setOfsait] = useState(0)
     const [categories, setCatigories] = useState('all')
     const [activeButton, setActiveButton ] = useState('all')
@@ -67,7 +66,7 @@ const Catalog = () => {
         <div className="container">
             <div className="catalog">
                 <div className="stairs">
-                    <h1>Каталог лестниц</h1>
+                    <h1 id="catalog">Каталог лестниц</h1>
                     <div>
                         <div className="categories">
                             <button
@@ -108,7 +107,7 @@ const Catalog = () => {
                         </div>
                     </div>
                 </div>            
-                <h1>Перила-ограждения на выбор</h1>
+                <h1 id="sheathing">Перила-ограждения на выбор</h1>
                 <div className="perila">
                     <Perila />
                     <Perila />
@@ -120,5 +119,3 @@ const Catalog = () => {
         </div>
     )
 }
-
-export default Catalog;
