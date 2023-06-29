@@ -11,11 +11,13 @@ export const Header = function() {
                     <h5 className="header__text">
                         изготовление лестниц на металлокаркасев Санкт-Петербурге
                     </h5>
-                    <div className="header__fixed">
+                    <div>
                         <Menu />
-                        <SocialNetworks/>
-                        <Messengers/>
-                        <Contacts/>
+                        <div className="header__fixed">
+                            <SocialNetworks/>
+                            <Messengers/>
+                            <Contacts/>
+                        </div>
                     </div>
                 </div>  
             </div>

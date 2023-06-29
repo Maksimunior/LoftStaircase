@@ -125,7 +125,13 @@
     border-radius: 50%;
     width: 38px;
     height: 38px;
+    border: 2px solid var(--header-contact);
     block-size: cover;
     background-position: left;
     background-repeat: no-repeat;
+}
+.perila__button:hover .perila__button_icon {
+    background: none;
+    border: 2px solid var(--header-contact);
+    background-image: url(./icons/button_arrow_yellow.svg);
 }

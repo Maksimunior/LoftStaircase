@@ -38,9 +38,18 @@
     width: 38px;
     height: 38px;
     border-radius: 50%;
+    border: 2px solid var(--header-contact);
     block-size: cover;
     background-repeat: no-repeat;
     background-position: left;
+}
+.stages__arrow:hover {
+    background: none;
+    border: 2px solid var(--header-contact);
+    background-image: url(./icons/Arrow_yellow.svg);
+    block-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
 }
 .stages__text {
     padding: 0 0 0 20px;

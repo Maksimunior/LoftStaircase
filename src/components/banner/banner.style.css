@@ -58,3 +58,13 @@
     background-repeat: no-repeat;
     background-position: left;
 }
+.banner__button:hover {
+    background: var(--header-contact);
+}
+.banner__button:hover .banner__button_icon {
+    background: var(--home-video-background);
+    background-image: url(./icons/Arrow_yellow.svg);
+    block-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;   
+}

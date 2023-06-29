@@ -34,30 +34,41 @@
     color: var(--header-email);
 }
 
-.menu {
-    transform: translate(0, 100px);
-    padding: 25px 40px 25px 0;
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    gap: 40px;
-    z-index: 4;
-    flex-wrap: wrap;
-}
-
-.fixed {
-    transform: translate(0, -100px);
-}
-
 .header__fixed {
     position: fixed;
     top: 0;
     right: 0;
-    padding: 15px 130px 15px 0; 
+    padding: 25px 130px 25px 0; 
     display: flex;
     align-items: center;
     justify-content: end;   
     background: var(--calculator-background-form);
     z-index: 3;
     width: 100%;
+}
+
+.nav {
+    position: sticky;
+    z-index: 4;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    transform: translate(-480px, 100px);
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.menu-link {
+    color: var(--header-numvers);
+    font-family: var(--header-font-jost);
+    font-weight: 400;
+} 
+
+.fixed {
+    position: fixed;
+    top: 35px;
+    transform: translate(0, -95px);
 }

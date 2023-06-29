@@ -7,7 +7,7 @@ export const FormBanner = () => {
     return (
         <div className="banner__form">
             <input type="text" name="phone" placeholder="номер телефона" className="banner__phone" required/>
-            <button className="banner__button" onClick={Click}><h6>заказать доставку</h6><a href="#" className="banner__button_icon" /></button>
+            <button className="banner__button" onClick={Click}><h6 className="text-will-order">ЗАКАЗАТЬ ДОСТАВКУ</h6><a href="#" className="banner__button_icon" /></button>
         </div>
     )
 }

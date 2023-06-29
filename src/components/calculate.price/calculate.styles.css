@@ -98,6 +98,7 @@
  
 .text-field {
     display: block;
+    width: 219px;
 }
 .field-title {
     text-align-last: left;
@@ -123,13 +124,19 @@
     cursor: pointer;
     gap: 20px;
     background: var(--header-contact);
-    border: 1px solid var(--header-contact);
+    border: 2px solid var(--header-contact);
     width: 350px;
     height: 57px;
     border-radius: 0;
 }
-.text-field {
-    width: 219px;
+.will-orders:hover {
+    background: var(--home-video-background);
+}
+.will-orders:hover .icon-will-order {
+    background: var(--header-contact);
+    background-image: url(./icons/button_arrow_white.svg);
+    block-size: cover;
+    background-position: left;
 }
 
 .modal {
@@ -180,4 +187,13 @@
 }
 .modal__text {
     font-weight: 300;
+}
+
+.text-field1__icon {
+    border: 2px solid var(--header-email);
+    background-image: url(./icons/button_arrow_white.svg);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    
 }

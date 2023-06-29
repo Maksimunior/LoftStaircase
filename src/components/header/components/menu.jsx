@@ -8,7 +8,7 @@ export const Menu = () => {
             const element = document.documentElement;
             const { scrollTop, clientHeight } = element;
     
-          if (scrollTop > 100) {
+          if (scrollTop > 84) {
             setIsFixed(true);
           } else {
             setIsFixed(false);
@@ -24,7 +24,7 @@ export const Menu = () => {
       
     return (
         <div className={isFixed ? "nav fixed" : "nav"}>
-            <ul className="menu">
+            <ul className="menu"> 
                     <li><a className="menu-link" href="#price">Узнать стоимость</a></li>
                     <li><a className="menu-link" href="#catalog">Каталог</a></li>
                     <li><a className="menu-link" href="#sheathing">Обшивка</a></li>
