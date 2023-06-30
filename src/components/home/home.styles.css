@@ -97,8 +97,8 @@
     justify-content: center;
     align-items: center;
     background: var(--home-form-shadow);
-    height: 100vh;
-    width: 100vw;
+    height: 0;
+    width: 0;
     top: 0;
     left: 0;
     z-index: 2;
@@ -106,6 +106,8 @@
 }
 .modal-video.active {
     transform: scale(1);
+    height: 100vh;
+    width: 100vw;
 }
 .modal-content {
     display: flex;

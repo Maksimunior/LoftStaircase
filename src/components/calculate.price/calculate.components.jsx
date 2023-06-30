@@ -26,7 +26,6 @@ export const Calculator = () => {
 
   const noReset = (e) => {
     e.preventDefault();
-    console.log(parseInt(state.height))
     if (
       state.perila &&
       state.stairs &&

@@ -49,7 +49,6 @@
 .mani {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     border: none;
     font-weight: 400;
     font-size: 16px;
@@ -63,11 +62,6 @@
 .check {
     display: flex;
     gap: 20px;
-}
-.checkb {
-    display: flex;
-    gap: 20px;
-
 }
 .radio {
     display: flex;
@@ -94,6 +88,9 @@
 .radio > input:checked + i {
     border: 1px solid var(--header-contact);
     background-image: url(./icons/check_mark_oreng.svg);
+    block-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
  
 .text-field {
@@ -137,6 +134,7 @@
     background-image: url(./icons/button_arrow_white.svg);
     block-size: cover;
     background-position: left;
+    background-repeat: no-repeat;
 }
 
 .modal {
@@ -146,8 +144,8 @@
     justify-content: center;
     align-items: center;
     background: var(--home-form-shadow);
-    height: 100vh;
-    width: 100vw;
+    height: 0;
+    width: 0;
     top: 0;
     left: 0;
     z-index: 2;
@@ -155,6 +153,8 @@
 }
 .modal.active {
     transform: scale(1);
+    height: 100vh;
+    width: 100vw;
 }
 .madal__content {
     display: flex;
@@ -189,11 +189,6 @@
     font-weight: 300;
 }
 
-.text-field1__icon {
-    border: 2px solid var(--header-email);
-    background-image: url(./icons/button_arrow_white.svg);
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    
-}
+
+
+

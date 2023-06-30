@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 export const EnvType = ({ onChange, name, value }) => {
+    const [open, setOpen] = useState(false)
     const handleChange = (event) => {
         onChange(event, name);
+    };
+    const handleOpen = (event) => {
+      setOpen(!open)
     };
     return (
       <div>
@@ -12,8 +16,9 @@ export const EnvType = ({ onChange, name, value }) => {
             className="mani" 
             value={value}
             onChange={handleChange}
+            onClick={handleOpen}
           >
-            <option value="Лестница закрытого типа с забежными ступенями"><a href="#" className="text-field1__icon"></a>Лестница закрытого типа с забежными ступенями</option>
+            <option value="Лестница закрытого типа с забежными ступенями">Лестница закрытого типа с забежными ступенями</option>
             <option value="Лестница открытого типа с забежными ступенями">Лестница открытого типа с забежными ступенями</option>
           </select><hr />
       </div>
